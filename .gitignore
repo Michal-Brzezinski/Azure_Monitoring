@@ -1,0 +1,25 @@
+# Terraform
+terraform/.terraform/
+terraform/.terraform.lock.hcl
+terraform/terraform.tfstate
+terraform/terraform.tfstate.backup
+terraform/*.tfvars
+
+# Ansible
+ansible/*.retry
+
+# SSH keys
+*.pem
+*.key
+*.pub
+id_rsa
+id_rsa.pub
+
+# Python / system
+__pycache__/
+*.log
+
+# Editor / IDE
+.idea/
+.vscode/
+*.swp
