@@ -80,8 +80,34 @@ Projekt realizowany jest w ramach zajęć akademickich i wykorzystuje subskrypcj
 
 Jak działa Terraform → Ansible → Docker.
 
+### 7. Uruchomienie/Zatrzymanie
 
-### 7. Wnioski
+Zatrzyamanie:
+
+```bash 
+az vm deallocate --resource-group rg-azure-monitoring --name vm-monitoring
+```
+
+Uruchomienie:
+
+```shell
+az vm start --resource-group rg-azure-monitoring --name vm-monitoring
+```
+
+Oraz po kilku sekundach:
+
+```shell
+terraform output public_ip
+```
+
+Po czym można użyć ssh
+
+```shell
+ssh student@20.234.10.32
+```
+
+
+### 8. Wnioski
 
 Czego się nauczyłeś.
 

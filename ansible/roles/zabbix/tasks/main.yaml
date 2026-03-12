@@ -1,0 +1,8 @@
+- name: Run Zabbix server container
+  docker_container:
+    name: zabbix-server
+    image: zabbix/zabbix-server-mysql
+    state: started
+    restart_policy: always
+    ports:
+      - "10051:10051"

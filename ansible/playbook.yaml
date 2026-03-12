@@ -1,0 +1,6 @@
+- hosts: vm
+  become: yes
+  roles:
+    - base
+    - docker
+    - zabbix
